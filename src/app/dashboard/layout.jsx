@@ -3,7 +3,7 @@ import Sidebar from "@/components/dashboard/sidebar/Sidebar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="flex gap-5">
       <div>
         <Sidebar />
       </div>
