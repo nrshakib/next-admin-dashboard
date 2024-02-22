@@ -9,6 +9,8 @@ import {
   MdSupervisedUserCircle,
   MdWork,
 } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+
 import MenuLink from "./menuLink/MenuLink";
 const menuItems = [
   {
@@ -74,12 +76,19 @@ const menuItems = [
 ];
 const Sidebar = () => {
   return (
-    <div className="sticky top-10">
-      <ul>
+    <div className="">
+      <div className="flex gap-5 items-center mb-5 pl-4">
+        <FaRegUser className="w-12 h-12" />
+        <div>
+          <p className="font-bold">User</p>
+          <p className="text-xs text-gray-400">Admin</p>
+        </div>
+      </div>
+      <ul className="list-none">
         {menuItems.map((eachItem, index) => {
           return (
             <li key={index}>
-              <span>{eachItem.title}</span>
+              <span className="text-gray-400 font-bold text-sm mb-8">{eachItem.title}</span>
               {eachItem.menu.map((item, index) => {
                 return <MenuLink item={item} key={index} />;
               })}
