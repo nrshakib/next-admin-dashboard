@@ -74,7 +74,7 @@ const menuItems = [
 ];
 const Sidebar = () => {
   return (
-    <div>
+    <div className="sticky top-10">
       <ul>
         {menuItems.map((eachItem, index) => {
           return (

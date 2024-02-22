@@ -2,7 +2,7 @@ const { default: Link } = require("next/link");
 
 const MenuLink = ({ item }) => {
   return (
-    <Link href={item.path}>
+    <Link className="flex gap-2 items-center" href={item.path}>
       {item.icon}
       {item.title}
     </Link>
