@@ -1,5 +1,5 @@
 const RightBar = () => {
-  return <div></div>;
+  return <div>RightBar</div>;
 };
 
 export default RightBar;

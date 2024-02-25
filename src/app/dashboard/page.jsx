@@ -5,9 +5,9 @@ import Transactions from "@/components/dashboard/transactions/Transactions";
 
 const Dashboard = () => {
   return (
-    <div>
-      <div>
-        <div>
+    <div className="flex gap-2  mt-5">
+      <div className="grow">
+        <div className="flex gap-4 justify-between">
           <Summary />
           <Summary />
           <Summary />
@@ -15,7 +15,7 @@ const Dashboard = () => {
         <Transactions />
         <Chart />
       </div>
-      <div>
+      <div className="">
         <RightBar />
       </div>
     </div>
