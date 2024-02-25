@@ -9,6 +9,7 @@ import {
   MdSupervisedUserCircle,
   MdWork,
 } from "react-icons/md";
+import { IoMdLogOut } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 
 import MenuLink from "./menuLink/MenuLink";
@@ -88,7 +89,9 @@ const Sidebar = () => {
         {menuItems.map((eachItem, index) => {
           return (
             <li key={index}>
-              <span className="text-gray-400 font-bold text-sm mb-8">{eachItem.title}</span>
+              <span className="text-gray-400 font-bold text-sm mb-8">
+                {eachItem.title}
+              </span>
               {eachItem.menu.map((item, index) => {
                 return <MenuLink item={item} key={index} />;
               })}
@@ -96,6 +99,10 @@ const Sidebar = () => {
           );
         })}
       </ul>
+      <button className="flex gap-2 items-center p-5 rounded hover:bg-gray-700 w-full">
+        <IoMdLogOut size={20} />
+        <p>Logout</p>
+      </button>
     </div>
   );
 };
