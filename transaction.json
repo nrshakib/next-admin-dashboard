@@ -1,0 +1,46 @@
+{
+  "transactions": [
+    {
+      "name": "John Doe",
+      "status": "completed",
+      "date": "2024-02-25",
+      "amount": 100.5
+    },
+    {
+      "name": "Jane Smith",
+      "status": "pending",
+      "date": "2024-02-24",
+      "amount": 75.25
+    },
+    {
+      "name": "Alice Johnson",
+      "status": "failed",
+      "date": "2024-02-23",
+      "amount": 50.0
+    },
+    {
+      "name": "Michael Brown",
+      "status": "completed",
+      "date": "2024-02-22",
+      "amount": 120.75
+    },
+    {
+      "name": "Emily Davis",
+      "status": "pending",
+      "date": "2024-02-21",
+      "amount": 90.1
+    },
+    {
+      "name": "William Wilson",
+      "status": "completed",
+      "date": "2024-02-20",
+      "amount": 200.0
+    },
+    {
+      "name": "Sarah Miller",
+      "status": "failed",
+      "date": "2024-02-19",
+      "amount": 30.5
+    }
+  ]
+}

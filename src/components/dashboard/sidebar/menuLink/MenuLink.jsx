@@ -6,7 +6,7 @@ const { default: Link } = require("next/link");
 
 const MenuLink = ({ item }) => {
   const pathName = usePathname();
-  console.log(pathName);
+  // console.log(pathName);
   return (
     <Link
       className={`flex gap-2 items-center p-4 rounded hover:bg-gray-700 my-2 ${pathName == item.path && 'bg-gray-600'}`}
